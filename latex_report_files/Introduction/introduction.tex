@@ -1,0 +1,62 @@
+%%% Thesis Introduction --------------------------------------------------
+\chapter{Introduction}
+\ifpdf
+    \graphicspath{{Introduction/IntroductionFigs/PNG/}{Introduction/IntroductionFigs/PDF/}{Introduction/IntroductionFigs/}}
+\else
+    \graphicspath{{Introduction/IntroductionFigs/EPS/}{Introduction/IntroductionFigs/}}
+\fi
+
+\nomenclature[zgbm]{$GBM$}{Glioblastoma } 
+\nomenclature[zmri]{$MRI$}{Magnetic Resonance Imaging } 
+\nomenclature[zmgmt]{$MGMT$}{O6-Methylguanine-DNA methyltransferase } 
+\nomenclature[zmtl]{$MTL$}{Multi Task Learning } 
+\nomenclature[ztmz]{$TMZ$}{Temozolomide } 
+\nomenclature[zauc]{$AUC$}{Area Under Curve } 
+\nomenclature[gp]{$\pi$}{ $\simeq 3.14\ldots$}  
+\nomenclature[rj]{$j$}{superscript index} 
+\nomenclature[s0]{$0$}{subscript index}
+
+Glioblastoma multiforme (GBM) is the most probable category of brain tumour that affects adults. Over 45\% of primary central nervous system tumours are accounted by GBM, and the patient survival rate is around 5.1\% for a five-year period (as documented in \cite{GBM_survival}). 
+
+%\cite{Sim90}
+
+
+\section {Motivation}
+O6-methylguanine-DNA methyltransferase (MGMT) promoter is a significant  molecular biomarker of glioblasoma that has relevance in cancer theurapeutics. MGMT is one of the DNA repair enzymes and the methylation status of its promoter in newly diagnosed GBM tumour has been identified as a predictor of chemotherapy response (\cite{GBM_chemo}).  The survival benefit governed by the MGMT gene methylation status during temozolomide (TMZ) treatment was observed by \cite{GBM_TMZ}. Further work has asserted that for patients who received chemotherapy through temozolomide, the methylation status of the MGMT promoter gene improved median survival compared with patients who had unmethylated gliomas. Thus, MGMT methylation status as reported in 30-60\% of glioblastomas can enhance the response to TMZ (as recorded in \cite{GBM_TMZ_2}).
+\vspace*{3mm} 
+
+Currently, surgical specimens based genetic lab testing is the standard to assess the MGMT methylation status of GBM. In this method, a large tissue sample is required, which is tested by polymerase chain reaction (PCR) to judge the methylation status(\cite{biopsy_1}). The major limitations of this invasive methodology are the possibility of incomplete biopsy samples due to tumour spatial heterogeneity and the high cost involved in tissue sampling (\cite{biopsy_2}). It can lead to neurological injury and nerve damage during the operative procedure. Therefore, there is a neccessity to find non-invasive methods based on brain imaging, which can successfully lead to an effective prediction of the methylation status of glioblastoma.
+
+\section{MRI Imaging}
+Magnetic Resonance Imaging (MRI) is a popular diagnostic tool in detection and treatment of GBM tumours (\cite{MRI_1}) The monitired, coordinated use of multiple, mutually informative imaging probes to understand brain structure and function has given raise to multimodal MRI imaging techniques, that has shown greater visibility of gliomas. 
+
+\vspace*{3mm} 
+In recent studies in radiogenomics, it has been shown that quantitative and qualitative features extracted from medical images can have a direct correlation with the genetic traits of the tissues. In this regard, radiogenomic data can be directly utilized to analyse the MGMT methylation status of the GBM tumour. (\cite{MRI_2} and \cite{MRI_3}). However, feature extraction from MRI images can be a cumbersome process as it involves a manual differentiation of the glioma tumour region from rest of the grey matter. Information analytics of the extracted feature is also prone to disagreement between the observers responsible for the tumour segmentation (\cite{MRI_4} and \cite{MRI_5})
+
+\section{Deep learning approaches}
+
+With the boom in deep learning techniques in medical imagings, several researchers have taken up the problem of GBM tumour diagnosis. Deep learning can enable automatic extraction of features based on the given loss function optimization for the particular use case (\cite{DL_1}). 
+
+\vspace*{3mm} 
+Convolutional Neural Networks (CNNs) make use of the convolution operation in images, and has been effective in image analysis. (\cite{DL_2}, \cite{DL_3}, \cite{DL_4}). As compared to traditional methods with hand-crafted features, deep learning methods has advantages of being robust to image distortions like changes in shape, orientation and involves a lower computational cost. The neural network architecture has the capacity to `learn' weights on its own when supplied with a considerably large training set, and this predictive ability has been widely beneficial. 
+
+\vspace*{3mm} 
+Although multiple radiomic approaches have used deep learning to predict the MGMT gene methylation, the clinical viability of the prediction and its reliability when compared to surgical diagnosis by physicians is a matter of open research. \cite{DL_5} performed texture analysis on MR images to predict MGMT promoter methylation status, whereas \cite{DL_6} used combined texture features along with supervised classification schemes as imaging biomarkers. 
+
+\vspace*{3mm} 
+There remains a scope for investigation of a complete end-to-end pipeline that can do automatic tumour detection, tumour region segmentation and subsequent MGMT methylation classification, with minimum user intervention. Since the MRI scans are often supplied as 3D volumes, efficient 2D sampling should be a crucial element of the model pipeline. We thereby try to come up with such an architecture that can achieve the discussed use cases.  
+
+
+
+
+
+
+
+
+%%% ----------------------------------------------------------------------
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 

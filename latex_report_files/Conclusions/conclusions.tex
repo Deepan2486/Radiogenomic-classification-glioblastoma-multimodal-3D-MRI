@@ -1,0 +1,20 @@
+\def\baselinestretch{1}
+\chapter{Conclusion}
+\ifpdf
+    \graphicspath{{Conclusions/ConclusionsFigs/PNG/}{Conclusions/ConclusionsFigs/PDF/}{Conclusions/ConclusionsFigs/}}
+\else
+    \graphicspath{{Conclusions/ConclusionsFigs/EPS/}{Conclusions/ConclusionsFigs/}}
+\fi
+
+\def\baselinestretch{1.66}
+
+The proposed end-to-end tumour segmentation pipeline can be used assistively to aid medical practioners in detecting and assessing the methylation of glioblastoma, in order to increase the chemotherapy benefits of TMZ. Since our model is sufficiently lightweight, it can save time in processing a large quantity of MRI scans. As limitations to the proposed approach, it should be noted that because the dataset size was quite small, an experimental bias could have been incurred. Further research could be done to build more nuanced models by combining the MRI modalities and give more emphasis on predicting the methylation status through a countinuos value (across all the gene markers) rather than limiting to a simple binary classification.
+
+%%% ----------------------------------------------------------------------
+
+% ------------------------------------------------------------------------
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 

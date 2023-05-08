@@ -1,0 +1,23 @@
+\chapter{Appendix A : Area Under Curve (AUC)}\label{AUC}
+
+The ROC: Receiver Operating characteristic curve analyses discriminatory capability of any binary classifier in machine learning. Area Under the ROC Curve (AUC) has been widely used to judge the performance of classification models. 
+\vspace{3mm}
+
+Normally, while using a Softmax layer in the last layer of any binary classification model, we get the output as the vector [x,y] where x and y represent the classification probability of the sample belonging to class 0 or class 1 respectively. Based on a threshold value (given), the activation function decides which class to assign. Thereafter when we calculate the Accuracy, Precision, Recall we are generally counting how many samples were classified correctly and how many were classified incorrectly. The count of assigned samples depends upon the threshold value assigned during classification.
+\vspace{3mm}
+\begin{center}
+    Sensitivity = Recall = $\displaystyle\frac{TP}{TP+FN}$
+    \\
+Specificity = $\displaystyle\frac{TN}{FP+TN}$ \\
+\end{center}
+
+AUC is calculated as the Area Under the $Sensitivity$(TPR) versus the $(1-Specificity)$(FPR) Curve. With an increasing sets of thresholds (0\% to 100\%) it calculates the TPR and FPR in each case, and plots a point in the AUC curve. When all the thresholds have been plotted, it calculates the integral area under the curve. AUC 0 signifies a model with 100\% wrong predictions while AUC 1 means a model with 100\% correct predictions.
+
+
+
+% ------------------------------------------------------------------------
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 
