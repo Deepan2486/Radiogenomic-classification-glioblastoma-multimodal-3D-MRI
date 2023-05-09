@@ -11,6 +11,8 @@
 ### File descriptions and utility:
 (Click on the foldername to directly go to the folder directory)
 
+- [**Data Exploartion**](data_exploration/): This folder contains basic utility functions for dicom to Niftii conversion, to view the DCM files, use the existing dataset structure to extract the MRI scans etc. The functions are purely defined based on need. The user might or might not use it based on their initial requirements. Our code runs independent of these methods.
+
 - [**UNet_segmentation**](Unet_segmentation/): This folder contains files which conducts semantic segmentation using UNet. Two variations are proposed: [middle_slice_segmentation.py](Unet_segmentation/middle_slice_segmentation.py) and [3_slice_classification.py](Unet_segmentation/3_slice_classification.py). In first method, the middle slices of each MRI scan are passed to the model, in the second case, we first sample non-overlapping stacks of 3 slices from the 155-sliced MRI scans (code for saving is in [3_slice_saving.py](Unet_segmentation/3_slice_saving.py)) and then the 3-stacks are passed to UNet to predict the mask of the middle slice.
 
   ```TRAIN_DATASET_PATH``` contains the root directory where the data is stored. ```t2_list``` and ```seg_list``` extracts the NifTI files from where the BraTS_2021 folder is located. Kindly change these paths to suit your need. Similarly in the saving phase, ```np.save()``` saved the sampled slices into a designated folder. Change the location of this folder.
