@@ -16,6 +16,28 @@ Authors: [Deepan Maitra](https://www.linkedin.com/in/deepan-maitra-71810b1b4/) (
 - [Results](results) contains all the implemented results (tabular and pictorial format) along with [code assistance](results/README.md)
 
 
-## Problem Statement
-This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification/overview/description) as the problem statement and utilises the same datasets as provided to competitors. 3D MRI files were sourced from the auxillary contest hosted in [Synapse](https://www.synapse.org/#!Synapse:syn27046444/wiki/616571)
+## Project Abstract
+O6-Methylguanine-DNA methyltransferase (MGMT) promoter methylation
+status is an important genetic characteristic of glioblastoma and
+is crucial for it’s diagnosis and chemotherapy efficacy. Multimodal
+MRI imaging techniques can contribute towards monitored automation
+of invasive surgical approaches. In this body of work, we propose
+an end-to-end pipeline of tumour segmentation and subsequent radiogenomic
+classification to classify the given MRI scans into being
+methylated or non-methylated. We develop a novel Multitask-learning
+based model (adapted from U-Net) to simultaneously perform segmentation
+and classification. Further, we utilise the segmentation
+results to cascade lightweight classification models based on several
+MRI slice sampling techniques to output the final classification scores.
+Our resultant pipeline performs well on each of the MRI axes, and several
+ensembles are tried out to arrive at suitable improvements. Based
+on 5-fold-cross-validation, we are able to surpass the current Kaggle
+leaderboard AUCs of the past BraTS RSNA-MICCAI Brain tumour
+challenge of 2021.
+
+
+## Problem source
+This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification/overview/description) as the problem statement and utilises the same datasets as provided to competitors. 3D MRI files were sourced from the auxillary contest hosted in [Synapse](https://www.synapse.org/#!Synapse:syn27046444/wiki/616571). 
+
+
 
