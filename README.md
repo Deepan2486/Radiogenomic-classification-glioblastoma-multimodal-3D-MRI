@@ -15,3 +15,7 @@ Authors: [Deepan Maitra](https://www.linkedin.com/in/deepan-maitra-71810b1b4/) (
 - [Latex](latex_report_files) contains the Latex project report directory. [report.tex](latex_report_files/report.tex) is the main build file. Building the latex report is explained in [latex_readme](latex_report_files/README.md)
 - [Results](results) contains all the implemented results (tabular and pictorial format) along with [code assistance](results/README.md)
 
+
+## Problem Statement
+This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification/overview/description) as the problem statement and utilises the same datasets as provided to competitors. 3D MRI files were sourced from the auxillary contest hosted in [Synapse](https://www.synapse.org/#!Synapse:syn27046444/wiki/616571)
+
