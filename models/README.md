@@ -4,11 +4,11 @@
 - The python files here have functions in which the models are defined and/or compiled. When using the models, import the respective file into the current working file and then use the particular function for that particular model. 
 - The models include
 
-  - *Unet model
-  - *Multi-task-Learning (MTL) model
-  - *EfficientNet B0
-  - *EfficientNet B3
-  - *EfficientNet B5
-  - *EfficientNet B7
-  - *ResNet34
-  - *ResNet18
+  - *Unet model*
+  - *Multi-task-Learning (MTL) model*
+  - *EfficientNet B0*
+  - *EfficientNet B3*
+  - *EfficientNet B5*
+  - *EfficientNet B7*
+  - *ResNet34*
+  - *ResNet18*
