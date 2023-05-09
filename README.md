@@ -47,6 +47,8 @@ The source codes are explained [here](code/README.md). Our methodology can be su
 - **Multi-task model**: The MTL model uses a joint classification and segmentation loss function to give a two-tuple output of both the tumour mask and the binary classification probabilty. The files can be found in [Unet_MTL](code/UNet_MTL). Two 2D sampling techniques were tested.
 - **SVM using GLCM matrix**: GLCM and Run-length encoding matrices were used to extract feature representations from the MRI scans, which were trained using SVM. The files are in [SVM](code/GLCM_SVM). 
 - **Volumetric Projections**: Volumetric projections were used to condense the spatial information of the 3D volume. Projections were taken along 3 axes (axial, coronal, saggital) and were of 3 types (Mean, Maximum and Standard Deviation). The source codes are in [volumetric_projections](code/volumetric_projections_classification).
+- **2D cropped-mask cascaded model**: A cascaded sequential model with segmentation networks and classifiers trained separately was used to predict the tumour mask, crop and bound the region-of-interest and then use the segmented single slice for final classification. The code can be found in [2D_cascaded](code/2D_cropped_cascaded).
+-  **3D cropped-volume cascaded model**: The 2D cascaded funtionality was extended to include a 3D tumour voxel (with adaptive slice selectivity to choose the best slices). The code can be found in [3D_cascaded](code/3D_cropped_cascaded).
 
 
 
