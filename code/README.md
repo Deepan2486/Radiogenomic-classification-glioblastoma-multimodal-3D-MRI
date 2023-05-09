@@ -16,4 +16,4 @@
   ```TRAIN_DATASET_PATH``` contains the root directory where the data is stored. ```t2_list``` and ```seg_list``` extracts the NifTI files from where the BraTS_2021 folder is located. Kindly change these paths to suit your need. Similarly in the saving phase, ```np.save()``` saved the sampled slices into a designated folder. Change the location of this folder.
   
   
-- [**UNet_MTL**](Unet_MTL/)
+- [**UNet_MTL**](UNet_MTL/)
