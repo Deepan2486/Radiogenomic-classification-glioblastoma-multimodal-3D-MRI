@@ -273,13 +273,13 @@ def create_model(input_shape, classes, name):
 ################################# EFFICIENTNET TESTING####################
 
 kf = KFold(n_splits=5)
+Effmodel=EfficientNet((100,100,3), 2)
 
 accuracy=[]
 auc=[]
 
 for train_index, test_index in kf.split(images,labels):
     X_train, X_test, y_train, y_test = images[train_index], images[test_index], labels[train_index], labels[test_index]
-    Effmodel=EfficientNet((100,100,3), 2)
     acc, au = get_score(Effmodel, X_train, X_test, y_train, y_test)
     accuracy.append(acc)
     auc.append(au)
