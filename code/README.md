@@ -17,5 +17,5 @@
   
   
 - [**UNet_MTL**](UNet_MTL/): This folder has all the files responsible for creating, running and testing all variations of the Multi-task-learning model that performs joint segmentation+classification. The files:
-  - [middle_slice_MTL.py](UNet_MTL/middle_slice_MTL.py) performs MTL on just the middle slice (the middle slice data was saved beforehand). The tumour masks are simplified to binary masks.
-  - 
+  - [middle_slice_MTL.py](UNet_MTL/middle_slice_MTL.py) performs MTL on just the middle slice (the middle slice data was saved beforehand). The tumour masks are simplified to binary masks. Training phase involves taking the middle slice from each sample, testing phase involves testing on just the middle slice.
+  - [10_slice_saving.py](UNet_MTL/10_slice_saving.py) and [10_slices_MTL.py](UNet_MTL/10_slices_MTL.py) trains the UNet model on 10 sampled slices on the training set. This makes the model robust to change in tumour shape. For testing, the middle slices of the test data samples are passed to the MTL model. The sampled 10 slices are saved externally to a local folder (as shown in code) which should be changed in  ```np.save()```
