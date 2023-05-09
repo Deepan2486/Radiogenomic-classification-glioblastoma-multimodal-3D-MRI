@@ -16,9 +16,13 @@
    Exact folder structure:
    
    `Training/Validation/Testing
+   
     │
+    
     └─── BraTS2021_00000
+    
     │   │
+    
     │   └─── BraTS2021_00000_flair.nii
     │   └─── BraTS2021_00000_t1.nii
     │   └─── BraTS2021_00000_t1ce.nii
