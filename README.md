@@ -4,9 +4,8 @@ This project was done as part of B.Tech Capstone project CP302/CP303 at IIT Ropa
 
 Authors: [Deepan Maitra](https://www.linkedin.com/in/deepan-maitra-71810b1b4/) (B.Tech CSE'23) and [Shivani Kumari](https://www.linkedin.com/in/shivani-kumari-577392193/) (B.Tech CSE'23)
 
-<p align="center">
-    <img width="200" src="latex_report_files/report_images/methylated.png">
-</p>
+![image](https://user-images.githubusercontent.com/80473384/237059259-58e1cd63-e5ff-4d2b-ac32-80a97995ac9f.png)
+
 
 ## A note about the directory structure:
 - [data](data) contains the MRI scan files and the classification labels. Some pre-trained models are also saved in [saved_models](data/saved_models)
@@ -39,6 +38,9 @@ This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-
 
 ## Solution workflow
 
+<p align="center">
+    <img width="300" src="latex_report_files/report_images/methylated.png">
+</p>
 The source codes are explained [here](code/README.md). Our methodology can be summarized in the following paths:
 - **Semantic segmentation of the glioblastoma**: We used two variations of [UNet](models/Unet.py) (binary mask and multi-label mask) to perform segmentation. The files can be found in [Unet_segmentation](code/Unet_segmentation).
 - **Multi-task model**: The MTL model uses a joint classification and segmentation loss function to give a two-tuple output of both the tumour mask and the binary classification probabilty. The files can be found in [Unet_MTL](code/UNet_MTL). Two 2D sampling techniques were tested.
