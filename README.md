@@ -50,5 +50,16 @@ The source codes are explained [here](code/README.md). Our methodology can be su
 - **2D cropped-mask cascaded model**: A cascaded sequential model with segmentation networks and classifiers trained separately was used to predict the tumour mask, crop and bound the region-of-interest and then use the segmented single slice for final classification. The code can be found in [2D_cascaded](code/2D_cropped_cascaded).
 -  **3D cropped-volume cascaded model**: The 2D cascaded funtionality was extended to include a 3D tumour voxel (with adaptive slice selectivity to choose the best slices). The code can be found in [3D_cascaded](code/3D_cropped_cascaded).
 
+## Concluding Remarks
 
+The proposed end-to-end tumour segmentation pipeline can be used assistively
+to aid medical practioners in detecting and assessing the methylation of glioblastoma,
+in order to increase the chemotherapy benefits of TMZ. Since our model
+is sufficiently lightweight, it can save time in processing a large quantity of MRI
+scans. As limitations to the proposed approach, it should be noted that because
+the dataset size was quite small, an experimental bias could have been incurred.
+Further research could be done to build more nuanced models by combining the
+MRI modalities and give more emphasis on predicting the methylation status
+through a countinuos value (across all the gene markers) rather than limiting to
+a simple binary classification.
 
