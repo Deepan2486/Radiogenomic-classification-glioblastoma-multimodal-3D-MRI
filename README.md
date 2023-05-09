@@ -37,4 +37,10 @@ ensembles are tried out to arrive at suitable improvements (using 5-fold-cross-v
 This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification/overview/description) as the problem statement and utilises the same datasets as provided to competitors. 3D MRI files were sourced from the auxillary contest hosted in [Synapse](https://www.synapse.org/#!Synapse:syn27046444/wiki/616571). 
 
 
+## Solution workflow
+
+The source codes are explained [here](code/README.md). Our methodology can be summarized in the following paths:
+- Semantic segmentation of the glioblastoma: We used two variations of [UNet](models/Unet.py) (binary mask and multi-label mask) to perform segmentation. The files can be found in [Unet_segmentation](code/Unet_segmentation).
+
+
 
