@@ -30,10 +30,7 @@ and classification. Further, we utilise the segmentation
 results to cascade lightweight classification models based on several
 MRI slice sampling techniques to output the final classification scores.
 Our resultant pipeline performs well on each of the MRI axes, and several
-ensembles are tried out to arrive at suitable improvements. Based
-on 5-fold-cross-validation, we are able to surpass the current Kaggle
-leaderboard AUCs of the past BraTS RSNA-MICCAI Brain tumour
-challenge of 2021.
+ensembles are tried out to arrive at suitable improvements (using 5-fold-cross-validation).
 
 
 ## Problem source
