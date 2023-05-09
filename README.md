@@ -57,7 +57,7 @@ This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-
 * The project was run parrallely in Google colab enabled GPU, the Kaggle notebook GPU and using the multicore HPC server GPUs provided by IIT Ropar (Using a CPU alternative will increase the training time and might disrupt the implementation)
 * The entire project was run on Python 3.8 using standard ML, DL and Image processing toolkit libraries. A full list of packages can be found here.
 * These packages have been remarkably useful: *nibabel* (for reading NIFTI files), *pydicom* (for dealing with Dicom files), *segmentation-models-3D* (for Loss functions and segmentation metrics), *focal_loss* (for direct usage of Focal loss function).
-* Latex builds were performed using Overleaf. 
+* Latex builds were performed using [Overleaf](https://www.overleaf.com/). 
 
 
 ## Solution workflow
