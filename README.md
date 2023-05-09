@@ -1,3 +1,3 @@
 # Radiogenomic Classification of Glioblastoma by Multimodal 3D MRI
 
-BTP CP302/CP303 project at IIT Ropar
+This project was done as part of B.Tech Capstone projec CP302/CP303 at IIT Ropar (session 2022-23)
