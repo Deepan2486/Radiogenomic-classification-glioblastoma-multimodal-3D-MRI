@@ -8,7 +8,7 @@
 * Assumptions, as and when taken, are mentioned sectionwise in this Readme file.
 
 
-### File descriptions and utility:
+### File utility and How to use them:
 (Click on the foldername to directly go to the folder directory)
 
 - [**Data Exploration**](data_exploration/): This folder contains basic utility functions for dicom to Niftii conversion, to view the DCM files, use the existing dataset structure to extract the MRI scans etc. The functions are purely defined based on need. The user might or might not use it based on their initial requirements. Our code runs independent of these methods.
