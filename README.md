@@ -4,7 +4,7 @@ This project was done as part of B.Tech Capstone project CP302/CP303 at IIT Ropa
 
 Authors: [Deepan Maitra](https://www.linkedin.com/in/deepan-maitra-71810b1b4/) (B.Tech CSE'23) and [Shivani Kumari](https://www.linkedin.com/in/shivani-kumari-577392193/) (B.Tech CSE'23)
 
-![image](https://user-images.githubusercontent.com/80473384/237059259-58e1cd63-e5ff-4d2b-ac32-80a97995ac9f.png)
+![image](https://user-images.githubusercontent.com/80473384/237059446-9f478666-d6b0-4ab4-9b78-8ec1082192ac.png)
 
 
 ## A note about the directory structure:
