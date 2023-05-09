@@ -32,7 +32,23 @@ Our resultant pipeline performs well on each of the MRI axes, and several
 ensembles are tried out to arrive at suitable improvements (using 5-fold-cross-validation).
 
 
-## Problem source
+## Motivation for the problem
+
+MGMT is one of the DNA repair enzymes and the methylation status of its
+promoter in newly diagnosed GBM tumour has been identified as a predictor
+of chemotherapy response. The survival benefit governed
+by the MGMT gene methylation status during temozolomide (TMZ) treatment
+was observed. Further work has asserted that for patients
+who received chemotherapy through temozolomide, the methylation status of
+the MGMT promoter gene improved median survival compared with patients
+who had unmethylated gliomas. Currently, surgical specimens based genetic lab testing is the standard to
+assess the MGMT methylation status of GBM. In this method, a large tissue sample is required, which is tested by polymerase chain reaction (PCR) to judge
+the methylation status. The major limitations of this invasive
+methodology are the possibility of incomplete biopsy samples due to tumour
+spatial heterogeneity. Therefore, there is a neccessity to find non-invasive methods based
+on brain imaging.
+
+## Source
 This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification/overview/description) as the problem statement and utilises the same datasets as provided to competitors. 3D MRI files were sourced from the auxillary contest hosted in [Synapse](https://www.synapse.org/#!Synapse:syn27046444/wiki/616571). 
 
 
