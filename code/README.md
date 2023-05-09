@@ -12,3 +12,5 @@
 (Click on the foldername to directly go to the folder directory)
 
 - [**UNet_segmentation**](Unet_segmentation/): This folder contains files which conducts semantic segmentation using UNet. Two variations are proposed: [middle_slice_segmentation.py](Unet_segmentation/middle_slice_segmentation.py) and [3_slice_classification.py](Unet_segmentation/3_slice_classification.py). In first method, the middle slices of each MRI scan are passed to the model, in the second case, we first sample non-overlapping stacks of 3 slices from the 155-sliced MRI scans (code for saving is in [3_slice_saving.py](Unet_segmentation/3_slice_saving.py)) and then the 3-stacks are passed to UNet to predict the mask of the middle slice.
+
+'''TRAIN_DATASET_PATH''' contains the root directory where the data is stored. '''t2_list''' and '''seg_list''' extracts the NifTI files from where the BraTS_2021 folder is located. Kindly change these paths to suit your need.
