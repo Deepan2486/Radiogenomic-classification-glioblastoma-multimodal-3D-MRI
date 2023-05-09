@@ -6,6 +6,8 @@ Authors: [Deepan Maitra](https://www.linkedin.com/in/deepan-maitra-71810b1b4/) (
 
 ![image](https://user-images.githubusercontent.com/80473384/237059446-9f478666-d6b0-4ab4-9b78-8ec1082192ac.png)
 
+The complete project report can be found [here](BTP_report__Deepan_Shivani_.pdf)
+
 
 ## A note about the directory structure:
 - [data](data) contains the MRI scan files and the classification labels. Some pre-trained models are also saved in [saved_models](data/saved_models)
