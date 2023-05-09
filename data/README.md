@@ -26,7 +26,6 @@
     │   └─── BraTS2021_00000_seg.nii
     │
     │
-    │
     └─── BraTS2021_00002
     │   │
     │   └─── BraTS2021_00002_flair.nii
@@ -36,4 +35,4 @@
     │   └─── BraTS2021_00002_seg.nii
     ```
 
-  
+    Here, **BraTS2021_00000_flair.nii** indicates the Flair modality,  **BraTS2021_00000_t1.nii** indicates the T1-weighted modality,  **BraTS2021_00000_t2.nii** indicates the T2-weighted modality,  **BraTS2021_00000_t1ce.nii** indicates the T1-contrast-enhanced modality, and **BraTS2021_00000_seg.nii** indicates the segmentation tumour mask.
