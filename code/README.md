@@ -21,3 +21,11 @@
   - [10_slice_saving.py](UNet_MTL/10_slice_saving.py) and [10_slice_MTL.py](UNet_MTL/10_slice_MTL.py) trains the UNet model on 10 sampled slices on the training set. This makes the model robust to change in tumour shape. For testing, the middle slices of the test data samples are passed to the MTL model. 
   
   The sampled 10 slices are saved externally to a local folder (as shown in code) which should be changed in  ```np.save()```. Similarly, ```DATASET_PATH```, ``` train_images_list```, ``` train_mask_list```, ```class_labels``` should be changed to the saving locations.
+  
+  
+
+- [**GLCM_SVM**](GLCM_SVM/): This uses the numerical feature representations of the tumour slices to train a traditional SVM classifier (there is no role of any CNN). The files are explained:
+  - [best_slice_saving.py](GLCM_SVM/best_slice_saving.py) saves the best slice from the 3D scans (the slice with maximum tumour visibility). A simple mask percentage check is applied to achieve this.
+  - [GLCM_training_testing.py](GLCM_SVM/GLCM_training_testing.py) trains the SVM by using the GLCM matrix. 
+
+  The location site of saving the best slice can be altered in ```np.save()```. Similarly, lists like ``` train_images_list```, ``` train_mask_list``` should also be run with the actual file locations.
