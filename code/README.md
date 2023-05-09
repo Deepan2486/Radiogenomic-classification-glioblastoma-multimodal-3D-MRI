@@ -7,3 +7,7 @@
 * Packages (as mentioned here) should be installed beforehand, before importing them into the .py files. The main dataset is the [BraTS dataset](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/master/data/BraTS_2021).
 * Assumptions, as and when taken, are mentioned sectionwise in this Readme file.
 
+
+### File descriptions and utility:
+
+- (**UNet_segmentation**): 
