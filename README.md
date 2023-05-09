@@ -41,7 +41,7 @@ This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-
 
 The source codes are explained [here](code/README.md). Our methodology can be summarized in the following paths:
 - **Semantic segmentation of the glioblastoma**: We used two variations of [UNet](models/Unet.py) (binary mask and multi-label mask) to perform segmentation. The files can be found in [Unet_segmentation](code/Unet_segmentation).
-- **Multi-task model**: The MTL model uses a joint classification and segmentation loss function to give a two-tuple output of both the tumour mask and the binary classification probabilty. The files can be found in [Unet_MTL](code/Unet_MTL). Two 2D sampling techniques were tested.
+- **Multi-task model**: The MTL model uses a joint classification and segmentation loss function to give a two-tuple output of both the tumour mask and the binary classification probabilty. The files can be found in [Unet_MTL](code/UNet_MTL). Two 2D sampling techniques were tested.
 - **SVM using GLCM matrix**: GLCM and Run-length encoding matrices were used to extract feature representations from the MRI scans, which were trained using SVM. The files are in [SVM](code/GLCM_SVM). 
 - **Volumetric Projections**: Volumetric projections were used to condense the spatial information of the 3D volume. Projections were taken along 3 axes (axial, coronal, saggital) and were of 3 types (Mean, Maximum and Standard Deviation). The source codes are in [volumetric_projections](code/volumetric_projections_classification).
 
