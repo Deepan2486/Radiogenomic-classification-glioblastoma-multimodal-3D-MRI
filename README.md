@@ -41,6 +41,7 @@ This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-
 <p align="center">
     <img width="300" src="latex_report_files/report_images/methylated.png">
 </p>
+
 The source codes are explained [here](code/README.md). Our methodology can be summarized in the following paths:
 - **Semantic segmentation of the glioblastoma**: We used two variations of [UNet](models/Unet.py) (binary mask and multi-label mask) to perform segmentation. The files can be found in [Unet_segmentation](code/Unet_segmentation).
 - **Multi-task model**: The MTL model uses a joint classification and segmentation loss function to give a two-tuple output of both the tumour mask and the binary classification probabilty. The files can be found in [Unet_MTL](code/UNet_MTL). Two 2D sampling techniques were tested.
