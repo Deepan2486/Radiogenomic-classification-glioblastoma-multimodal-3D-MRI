@@ -59,7 +59,7 @@ This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-
 
 - The MRI scan directory:
 
-  Each independent case has a dedicated folder identified by a five-digit number. Within each of these “case” folders, there are four sub-folders, each of them corresponding to each of the structural multi-parametric MRI (mpMRI) scans, in NifTI format. The exact mpMRI scans included are:
+  Each independent case has a dedicated folder identified by a five-digit number. Within each of these “case” folders, there are four scans, each of them corresponding to each of the structural multi-parametric MRI (mpMRI) scans, in NifTI format. The exact mpMRI scans included are:
 
     - Fluid Attenuated Inversion Recovery (FLAIR)
     - T1-weighted pre-contrast (T1w)
