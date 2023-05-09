@@ -29,3 +29,5 @@
   - [GLCM_training_testing.py](GLCM_SVM/GLCM_training_testing.py) trains the SVM by using the GLCM matrix. 
 
   The location site of saving the best slice can be altered in ```np.save()```. Similarly, lists like ``` train_images_list```, ``` train_mask_list``` should also be run with the actual file locations.
+
+- [**Volumetric Projections**](volumetric_projections_classification/): Here we condense the 3D spatial information into a single slice, by taking projections along a particular axis. [AXIS_1_classifier_projection_training_testing.py](/volumetric_projections_classification/AXIS_1_classifier_projection_training_testing.py) 
