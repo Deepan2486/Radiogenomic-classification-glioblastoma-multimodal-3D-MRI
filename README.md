@@ -68,7 +68,8 @@ This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-
 
    Exact folder structure:
    
-   ```Training/Validation/Testing
+   ```
+   Training/Validation/Testing
     │
     └─── BraTS2021_00000
     │   │
