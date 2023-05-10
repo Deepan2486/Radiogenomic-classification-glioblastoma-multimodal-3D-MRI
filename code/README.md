@@ -7,9 +7,15 @@
 * The main dataset is the [BraTS dataset](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/master/data/BraTS_2021).
 * Assumptions, as and when taken, are mentioned sectionwise in this Readme file.
 
-### Package and module installation
+### Package and dependency installation
 
 The project has been done in **Python 3.8**. 
+
+Creating an new conda virtual environment: 
+```
+conda create -n radiogenomic python=3.8 -y
+conda activate radiogenomic
+```
 
 Packages (as mentioned [here](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/main/code/package_requirements.txt)) should be installed beforehand, before importing them into the .py files. 
 ```
@@ -19,6 +25,7 @@ pip install nibabel
 pip install pydicom
 pip install scikit-learn
 pip install segmentation_models_3D
+pip install focal_loss
 pip install matplotlib
 pip install glob2
 
