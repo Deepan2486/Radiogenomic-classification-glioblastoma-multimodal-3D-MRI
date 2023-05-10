@@ -13,4 +13,6 @@ The result files are explained below:
  * [partition_projections.py](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/main/code/volumetric_projections_classification/partitional_projection_training_testing.py) gives the partitional projections approach (dividing the slice stack into 3 clusters and then projecting individually to form a 3-slice-stack).
 * [2D Cascaded model](2D_cascaded_results.pdf): This file shows the results of the 2D cropped-mask cascaded model (code file: [2D_cascaded](/code/2D_cropped_cascaded)). Models are run with EfficientNet and ResNet as documented in the file.
 * [3D Cascaded model](3D_cascaded_results.pdf): This file shows the results of the 3D cropped-mask 5-slice cascaded model (code file: [3D_cascaded](/code/3D_cropped_cascaded)). Please note:
-  * hhh
+  * This test requires the use of ```StratifiedKFold(n_splits=5, shuffle=True, random_state=X)``` with a **random_state** to achieve a similar foldwise division as experimented with.
+  * The models in the results file comes with a **r=x** label (with each model/ensemble). This denotes the **random_state** while running that particular test. 
+  * While running the code for that file, use that value in```StratifiedKFold(n_splits=5, shuffle=True, random_state=X)```
