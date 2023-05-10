@@ -8,7 +8,7 @@ Authors: [Deepan Maitra](https://www.linkedin.com/in/deepan-maitra-71810b1b4/) (
 
 The complete project report can be found [here](BTP_report__Deepan_Shivani_.pdf)
 
-------------
+
 
 ## A note about the directory structure:
 - [data](data) contains the MRI scan files and the classification labels. Some pre-trained models are also saved in [saved_models](data/saved_models)
@@ -52,6 +52,7 @@ methodology are the possibility of incomplete biopsy samples due to tumour
 spatial heterogeneity and the high cost involved. Therefore, there is a neccessity to find non-invasive methods based
 on brain imaging. 
 
+------------
 ## Source
 This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification/overview/description) as the problem statement and utilises the same datasets as provided to competitors. 3D MRI files were sourced from the auxillary contest hosted in [Synapse](https://www.synapse.org/#!Synapse:syn27046444/wiki/616571). 
 
@@ -94,6 +95,7 @@ This project uses the [BraTS 2021 Kaggle contest](https://www.kaggle.com/c/rsna-
     Here, **BraTS2021_00000_flair.nii** indicates the Flair modality,  **BraTS2021_00000_t1.nii** indicates the T1-weighted modality,  **BraTS2021_00000_t2.nii** indicates the T2-weighted modality,  **BraTS2021_00000_t1ce.nii** indicates the T1-contrast-enhanced modality, and **BraTS2021_00000_seg.nii** indicates the segmentation tumour mask.
 
 
+---------------
 
 ## Computational resources, tools and packages
 
@@ -116,6 +118,8 @@ The source codes are explained [here](code/README.md). Our methodology can be su
 - **Volumetric Projections**: Volumetric projections were used to condense the spatial information of the 3D volume. Projections were taken along 3 axes (axial, coronal, saggital) and were of 3 types (Mean, Maximum and Standard Deviation). The source codes are in [volumetric_projections](code/volumetric_projections_classification).
 - **2D cropped-mask cascaded model**: A cascaded sequential model with segmentation networks and classifiers trained separately was used to predict the tumour mask, crop and bound the region-of-interest and then use the segmented single slice for final classification. The code can be found in [2D_cascaded](code/2D_cropped_cascaded).
 -  **3D cropped-volume cascaded model**: The 2D cascaded funtionality was extended to include a 3D tumour voxel (with adaptive slice selectivity to choose the best slices). The code can be found in [3D_cascaded](code/3D_cropped_cascaded).
+
+------------------
 
 ## Concluding Remarks
 
