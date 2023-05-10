@@ -9,7 +9,14 @@
 
 ### Package and module installation
 ```
-pip install tensorflow-cpu  OR pip install tensorflow-gpu **(based on whether you have GPU or CPU requirements)**
+pip install tensorflow-cpu  OR pip install tensorflow-gpu (based on whether you have GPU or CPU requirements)
+pip install opencv-python
+pip install nibabel
+pip install pydicom
+pip install scikit-learn
+pip install segmentation_models_3D
+pip install matplotlib
+pip install glob2
 
 ```
 
