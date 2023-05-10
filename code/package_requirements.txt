@@ -2,6 +2,7 @@ math
 os
 glob
 open-cv
+nibabel
 pydicom
 sklearn
 pandas
