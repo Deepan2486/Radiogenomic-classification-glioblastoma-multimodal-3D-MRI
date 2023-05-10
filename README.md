@@ -8,6 +8,7 @@ Authors: [Deepan Maitra](https://www.linkedin.com/in/deepan-maitra-71810b1b4/) (
 
 The complete project report can be found [here](BTP_report__Deepan_Shivani_.pdf)
 
+------------
 
 ## A note about the directory structure:
 - [data](data) contains the MRI scan files and the classification labels. Some pre-trained models are also saved in [saved_models](data/saved_models)
@@ -16,6 +17,7 @@ The complete project report can be found [here](BTP_report__Deepan_Shivani_.pdf)
 - [Latex](latex_report_files) contains the Latex project report directory. [report.tex](latex_report_files/report.tex) is the main build file. Building the latex report is explained in [Latex Instructions](latex_report_files/README.md)
 - [Results](results) contains all the implemented results (tabular and pictorial format) along with [Code Assistance](results/README.md)
 
+----------
 
 ## Project Abstract
 O6-Methylguanine-DNA methyltransferase (MGMT) promoter methylation
