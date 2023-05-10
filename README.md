@@ -11,10 +11,10 @@ The complete project report can be found [here](BTP_report__Deepan_Shivani_.pdf)
 
 ## A note about the directory structure:
 - [data](data) contains the MRI scan files and the classification labels. Some pre-trained models are also saved in [saved_models](data/saved_models)
-- [code](code) contains all the source code files, arranged in folders. The explanations of the code files are in [code_readme](code/README.md)
-- [models](models) contains .py files returning all the segmentation, MTL and classification models. The explanations are in [models_readme](models/README.md)
-- [Latex](latex_report_files) contains the Latex project report directory. [report.tex](latex_report_files/report.tex) is the main build file. Building the latex report is explained in [latex_readme](latex_report_files/README.md)
-- [Results](results) contains all the implemented results (tabular and pictorial format) along with [code assistance](results/README.md)
+- [code](code) contains all the source code files, arranged in folders. The explanations of the code files are in [CODE INSTRUCTIONS](code/README.md)
+- [models](models) contains .py files returning all the segmentation, MTL and classification models. The explanations are in [MODELS README](models/README.md)
+- [Latex](latex_report_files) contains the Latex project report directory. [report.tex](latex_report_files/report.tex) is the main build file. Building the latex report is explained in [Latex Instructions](latex_report_files/README.md)
+- [Results](results) contains all the implemented results (tabular and pictorial format) along with [Code Assistance](results/README.md)
 
 
 ## Project Abstract
