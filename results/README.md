@@ -16,3 +16,4 @@ The result files are explained below:
   * This test requires the use of ```StratifiedKFold(n_splits=5, shuffle=True, random_state=X)``` with a **random_state** to achieve a similar foldwise division as experimented with.
   * The models in the results file comes with a **r=x** label (with each model/ensemble). This denotes the **random_state** while running that particular test. 
   * While running the code for that file, use that value in```StratifiedKFold(n_splits=5, shuffle=True, random_state=X)```
+  * Methods like ```get_score()``` and ```get_ensemble_score()``` are utility functions which assist in the finding of mean and SD of AUC and accuracy. They may be changed by the user if they want a different computation. 
