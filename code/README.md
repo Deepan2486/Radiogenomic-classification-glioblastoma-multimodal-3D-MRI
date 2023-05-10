@@ -7,6 +7,13 @@
 * Packages (as mentioned [here](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/main/code/package_requirements.txt)) should be installed beforehand, before importing them into the .py files. The main dataset is the [BraTS dataset](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/master/data/BraTS_2021).
 * Assumptions, as and when taken, are mentioned sectionwise in this Readme file.
 
+### Package and module installation
+```
+pip install tensorflow-cpu  OR pip install tensorflow-gpu **(based on whether you have GPU or CPU requirements)**
+
+```
+
+
 
 ### File utility and How to use them:
 (Click on the foldername to directly go to the folder directory)
