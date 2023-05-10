@@ -12,4 +12,5 @@ The result files are explained below:
  * [axis_2,3_projections.py](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/main/code/volumetric_projections_classification/AXIS_2,3_projection_training_testing.py) performs the SD projections along coronal and saggital axes (axis 2 and axis 3)
  * [partition_projections.py](https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI/tree/main/code/volumetric_projections_classification/partitional_projection_training_testing.py) gives the partitional projections approach (dividing the slice stack into 3 clusters and then projecting individually to form a 3-slice-stack).
 * [2D Cascaded model](2D_cascaded_results.pdf): This file shows the results of the 2D cropped-mask cascaded model (code file: [2D_cascaded](/code/2D_cropped_cascaded)). Models are run with EfficientNet and ResNet as documented in the file.
-* [3D Cascaded model](3D_cascaded_results.pdf): 
+* [3D Cascaded model](3D_cascaded_results.pdf): This file shows the results of the 3D cropped-mask 5-slice cascaded model (code file: [3D_cascaded](/code/3D_cropped_cascaded)). Please note:
+ * 
