@@ -31,6 +31,10 @@ pip install glob2
 
 ```
 
+Cloning this Git repository:
+Step 1: Open Git Bash on your local machine
+Step 2: Navigate to the working directory where you want to clone 
+Step 3: $ git clone https://github.com/Deepan2486/
 
 
 ### File utility and How to use them:
