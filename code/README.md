@@ -32,10 +32,18 @@ pip install glob2
 ```
 
 Cloning this Git repository:
+```
 Step 1: Open Git Bash on your local machine
 Step 2: Navigate to the working directory where you want to clone 
-Step 3: $ git clone https://github.com/Deepan2486/
-
+Step 3: 
+$ git clone https://github.com/Deepan2486/Radiogenomic-classification-glioblastoma-multimodal-3D-MRI.git
+Step 4: Press 'Enter'
+> Cloning into `Your folder`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
 ### File utility and How to use them:
 (Click on the foldername to directly go to the folder directory)
